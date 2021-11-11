@@ -12,7 +12,7 @@ img_size = 150
 @st.cache(allow_output_mutation=True)
 def load_model():
     print("loading model")
-    model = load_model('pneumonia_detection_cnn.h5')
+    model = load_model('pneumonia_detection_cnn.h5', compile=True)
     return model
 
 def preprocess_image(img):
