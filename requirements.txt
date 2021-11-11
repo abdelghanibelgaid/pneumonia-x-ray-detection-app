@@ -1,6 +1,6 @@
-numpy==1.18.5
-Keras==2.4.3
-streamlit==0.69.2
-Pillow==8.0.0
-tensorflow==2.3.1
-opencv-python==4.1.0.25
+numpy
+Keras
+streamlit
+Pillow
+tensorflow
+opencv
