@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import functions
+import cv2
 from PIL import Image
 
 # App Title
