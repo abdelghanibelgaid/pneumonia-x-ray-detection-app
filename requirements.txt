@@ -4,4 +4,3 @@ Keras
 streamlit
 Pillow
 tensorflow
-opencv
