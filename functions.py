@@ -1,6 +1,7 @@
 import os
 import numpy as np
 import keras
+from tensorflow.keras.models import load_model
 import streamlit as st
 from keras import layers, models, optimizers
 from PIL import Image
@@ -11,7 +12,7 @@ img_size = 150
 @st.cache(allow_output_mutation=True)
 def load_model():
     print("loading model")
-    model = keras.models.load_model(f"{MODEL}", compile=True)
+    model = load_model('pneumonia_detection_cnn.h5')
     return model
 
 def preprocess_image(img):
