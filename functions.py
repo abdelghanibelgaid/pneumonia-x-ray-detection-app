@@ -9,7 +9,7 @@ MODEL = "pneumonia_detection_cnn.h5"
 @st.cache(allow_output_mutation=True)
 def load_model():
     print("loading model")
-    model = keras.models.load_model(f"/{MODEL}", compile=True)
+    model = keras.models.load_model(f"./{MODEL}", compile=True)
     return model
 
 def preprocess_image(img):
