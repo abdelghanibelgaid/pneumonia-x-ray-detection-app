@@ -19,7 +19,6 @@ def preprocess_image(img):
 
 def predict(model, img):
     prob = model.predict(np.reshape(img, [-1, 150, 150, 1]))[0]
-    print(prob)
     if prob >= 0.5:
         prediction = True
     else:
