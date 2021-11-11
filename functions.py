@@ -14,7 +14,7 @@ def load_model():
 
 def preprocess_image(img):
     image = Image.open(img).convert("RGB")
-    p_img = image.resize((224, 224))
+    p_img = image.resize((150, 150))
     return np.array(p_img) / 255.0
 
 def predict(model, img):
