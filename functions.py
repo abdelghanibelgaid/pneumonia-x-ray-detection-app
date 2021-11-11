@@ -1,7 +1,6 @@
 import os
 import numpy as np
 import keras
-#import cv2
 import streamlit as st
 from keras import layers, models, optimizers
 from PIL import Image
