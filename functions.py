@@ -1,10 +1,14 @@
-import keras
+import os
 import numpy as np
+import keras
+import cv2
 import streamlit as st
 from keras import layers, models, optimizers
 from PIL import Image
 
 MODEL = "pneumonia_detection_cnn.h5"
+img_size = 150
+
 
 @st.cache(allow_output_mutation=True)
 def load_model():
@@ -14,7 +18,9 @@ def load_model():
 
 def preprocess_image(img):
     image = Image.open(img).convert("RGB")
-    p_img = image.resize((150, 150))
+    img_arr = cv2.imread(image, cv2.IMREAD_GRAYSCALE)
+    resized_arr = cv2.resize(img_arr, (img_size, img_size))
+    p_img = resized_arr.resize((150, 150))
     return np.array(p_img) / 255.0
 
 def predict(model, img):
