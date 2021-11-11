@@ -46,4 +46,4 @@ if img is not None:
     else:
         st.markdown(unsafe_allow_html=True, body="<span style='color:green; font-size: 35px'><strong><h3>Healthy!</h3></strong></span>")
 
-    st.text(f"*Probability of pneumonia is {round(prob[0][0] * 100, 2)}%")
+    st.text(f"*Probability of pneumonia is {round(prob[0] * 100, 2)}%")
