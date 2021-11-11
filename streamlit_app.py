@@ -14,17 +14,12 @@ st.markdown(unsafe_allow_html=True, body="<p>Welcome to Pneumonia X-Ray Detectio
                                          "moment has a test accuracy of "
                                          "<strong>+90%.</strong></p>")
 
-st.markdown("First, let's load an X-Ray Chest image.")
-
-# Loading model
-
 # Img uploader
 img = st.file_uploader(label="Load X-Ray Chest image", type=['jpeg', 'jpg', 'png'], key="xray")
 
 if img is not None:
     # Preprocessing Image
     p_img = functions.preprocess_image(img)
-
     if st.checkbox('Zoom image'):
         image = np.array(Image.open(img))
         st.image(image, use_column_width=True)
