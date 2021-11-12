@@ -4,3 +4,4 @@ Keras
 streamlit
 Pillow
 tensorflow
+math
