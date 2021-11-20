@@ -7,7 +7,7 @@ from PIL import Image
 st.title("Pneumonia X-Ray Detection App")
 
 # Introduction text
-st.markdown(unsafe_allow_html=True, body="<p>Welcome to Pneumonia X-Ray Detection App</p>"
+st.markdown(unsafe_allow_html=True, body="<p>Welcome to the Pneumonia X-Ray Detection App</p>"
                                          "<p>Upload a Chest X-Ray image and predict whether the patient "
                                          "suffers pneumonia or not.</p>"
                                          "<p>The model used is a Convolutional Neural Network (CNN) and in this "
