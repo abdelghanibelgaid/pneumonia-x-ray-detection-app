@@ -1,4 +1,6 @@
 import streamlit as st
+import about
+import functions
 def main():
     menu_list = ['About', 'Pneumonia Detection','Breast Cancer Detection', 'Brain Tumor Detection']
     
