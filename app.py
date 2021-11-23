@@ -3,7 +3,7 @@ import numpy as np
 from PIL import Image
 import about
 import functions
-import pneumonia
+import pneumonia_detection
 
 def main():
     menu_list = ['About', 'Pneumonia Detection','Breast Cancer Detection', 'Brain Tumor Detection']
@@ -21,7 +21,7 @@ def main():
     
     # Selectiong Pneumonia Detection Web App
     if menu_selection == 'Pneumonia Detection':
-        pneumonia.display_webapp_1()
+        pneumonia_detection.display_webapp_1()
     
     # Selectiong Breast Cancer Detection Web App
     if menu_selection == 'Breast Cancer Detection':
