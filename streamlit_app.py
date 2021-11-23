@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import functions
+import time
 from PIL import Image
 
 # App Title
@@ -32,13 +33,15 @@ if img is not None:
     model = functions.load_model()
 
     # Predicting result
+    start = time.process_time()
     prob, prediction = functions.predict(model, p_img)
 
     loading_msg.text('')
 
-    if prediction:
-        st.markdown(unsafe_allow_html=True, body="<span style='color:red; font-size: 35px'><strong><h3>Pneumonia!</h3></strong></span>")
+    if prediction is True:
+        st.markdown(f'The model concluded that the patient has pneumonia, with a probability of having pneumonia of {round(abs(prob) * 100, 2)}%.')
+    elif prediction is False:
+        st.markdown(f'The model concluded that the patient doesn\'t have pneumonia, with a probability of having pneumonia of {round(abs(prob) * 100, 2)}%.')
     else:
-        st.markdown(unsafe_allow_html=True, body="<span style='color:green; font-size: 35px'><strong><h3>Healthy!</h3></strong></span>")
-
-    st.text(f"Probability of pneumonia is {round(abs(prob) * 100, 2)}%")
+        st.writemarkdown(f'The model concluded that the patient might have pneumonia, with a probability of having pneumonia of {round(abs(prob) * 100, 2)}%.')
+    st.(f'Time taken for prediction is {time.process_time() - start} sec')
