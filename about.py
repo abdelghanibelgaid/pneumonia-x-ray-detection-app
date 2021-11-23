@@ -2,7 +2,7 @@ import streamlit as st
 
 # Display About
 def display_about():
-    # st.markdown('![Rhazes.io Logo](github_link)')
+    # st.markdown('![Rhazes.io Logo](https://raw.githubusercontent.com/abdelghanibelgaid/pneumonia-x-ray-detection-app/master/Rhazes.png)')
     
     st.markdown('## Project Description')
     st.markdown('')
