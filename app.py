@@ -3,7 +3,6 @@ import numpy as np
 from PIL import Image
 import about
 import functions
-import pneumonia
 def main():
     menu_list = ['About', 'Pneumonia Detection','Breast Cancer Detection', 'Brain Tumor Detection']
     
