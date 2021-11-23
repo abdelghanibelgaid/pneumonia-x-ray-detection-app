@@ -8,9 +8,9 @@ import streamlit as st
 import numpy as np
 import functions
 from PIL import Image
-
+img = st.file_uploader(label="Load X-Ray Chest Image", type=['jpeg', 'jpg', 'png'], key="xray")
 # Display Pneumonia Web App
-def display_webapp_1():
+def display_webapp_1(img):
     # Introduction
     st.title("Pneumonia X-Ray Detection")
     st.markdown('In this section, we’re presenting the Pneumonia X-Ray Detection Web Application')
