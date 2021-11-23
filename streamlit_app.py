@@ -44,4 +44,4 @@ if img is not None:
         st.markdown(f'The model concluded that the patient doesn\'t have pneumonia, with a probability of having pneumonia of {round(abs(prob) * 100, 2)}%.')
     else:
         st.writemarkdown(f'The model concluded that the patient might have pneumonia, with a probability of having pneumonia of {round(abs(prob) * 100, 2)}%.')
-    st.(f'Time taken for prediction is {time.process_time() - start} sec')
+    st.text(f'Time taken for prediction is {time.process_time() - start} sec')
