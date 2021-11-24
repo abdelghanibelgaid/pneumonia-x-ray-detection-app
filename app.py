@@ -13,7 +13,7 @@ menu_list = ['About', 'Pneumonia Detection','Breast Cancer Detection', 'Brain Tu
     
 # Display the Sidebar
 st.sidebar.title('Navigation')
-menu_selection = st.sidebar.radio('', menu_list, index=2, key=None)
+menu_selection = st.sidebar.radio('Go to', menu_list, index=2, key=None)
     
 # Display text in Sidebar
 about.display_sidebar()
