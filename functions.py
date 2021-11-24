@@ -7,7 +7,7 @@ from PIL import Image
 MODEL_1 = "pneumonia_detection_cnn.h5"
 
 @st.cache(allow_output_mutation=True)
-def load_model(model=MODEL_1):
+def load_model(model=None):
     print("loading model")
     model = keras.models.load_model(f"{model}", compile=True)
     return model
