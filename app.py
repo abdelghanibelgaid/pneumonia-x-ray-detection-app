@@ -43,6 +43,7 @@ if menu_selection == 'Pneumonia Detection':
         else:
             st.image(p_img)
         # Loading model
+        MODEL_1 = "pneumonia_detection_cnn.h5"
         loading_msg = st.empty()
         loading_msg.text("Predicting...")
         model = functions.load_model(model=MODEL_1)
