@@ -5,7 +5,9 @@ import time
 import about
 import functions
 
-st.set_page_config(page_title='Rhazes.io', page_icon='https://raw.githubusercontent.com/abdelghanibelgaid/pneumonia-x-ray-detection-app/master/Rhazes.png', initial_sidebar_state='expanded')
+st.set_page_config(page_title='Rhazes.io',
+                   page_icon='https://raw.githubusercontent.com/abdelghanibelgaid/pneumonia-x-ray-detection-app/master/Rhazes.png',
+                   initial_sidebar_state='expanded')
 
 menu_list = ['About', 'Pneumonia Detection','Breast Cancer Detection', 'Brain Tumor Detection']
     
