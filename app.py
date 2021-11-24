@@ -62,10 +62,10 @@ if menu_selection == 'Pneumonia Detection':
         
     # Additional Text
     ## Dataset Details
-    st.markdown('### About the Dataset and Testing Strategy')
+    st.markdown('#### About the Dataset and Testing Strategy')
     st.markdown('text')
     ## Model Overview and Metrics
-    st.markdown('### Model Overview and Metrics')
+    st.markdown('#### Model Overview and Metrics')
     st.markdown('text') 
     
 # Selectiong Breast Cancer Detection Web App
