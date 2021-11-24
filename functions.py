@@ -4,12 +4,12 @@ import tensorflow as tf
 import tensorflow.keras as keras
 from PIL import Image
 
-MODEL = "pneumonia_detection_cnn.h5"
+MODEL_1 = "pneumonia_detection_cnn.h5"
 
 @st.cache(allow_output_mutation=True)
-def load_model():
+def load_model(model=MODEL_1):
     print("loading model")
-    model = keras.models.load_model(f"{MODEL}", compile=True)
+    model = keras.models.load_model(f"{model}", compile=True)
     return model
 
 def preprocess_image(img):
