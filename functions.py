@@ -2,7 +2,6 @@ import numpy as np
 import streamlit as st
 import tensorflow as tf
 import tensorflow.keras as keras
-from tensorflow.keras import layers, models, optimizers  # modeling
 from PIL import Image
 
 MODEL = "pneumonia_detection_cnn.h5"
