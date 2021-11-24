@@ -2,7 +2,7 @@ import streamlit as st
 
 # Display About
 def display_about():
-    st.image('https://raw.githubusercontent.com/abdelghanibelgaid/pneumonia-x-ray-detection-app/master/Rhazes.png', width=80)
+    # st.image('https://raw.githubusercontent.com/abdelghanibelgaid/pneumonia-x-ray-detection-app/master/Rhazes.png', width=80)
     
     st.markdown('## Project Description')
     st.markdown('')
