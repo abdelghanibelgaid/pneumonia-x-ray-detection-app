@@ -9,6 +9,16 @@ st.set_page_config(
         page_title="Rhazes.io",
 )
 
+image_directory = "https://raw.githubusercontent.com/abdelghanibelgaid/pneumonia-x-ray-detection-app/master/Rhazes.png"
+image = Image.open(image_directory)
+
+PAGE_CONFIG = {"page_title":"MyApp", 
+               "page_icon":image, 
+               "layout":"centered", 
+               "initial_sidebar_state":"auto"}
+
+st.set_page_config(**PAGE_CONFIG)
+
 menu_list = ['About', 'Pneumonia Detection','Breast Cancer Detection', 'Brain Tumor Detection']
     
 # Display the Sidebar
