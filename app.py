@@ -58,6 +58,15 @@ if menu_selection == 'Pneumonia Detection':
         else:
             st.markdown(f'The model concluded that the patient might have pneumonia, with a probability of having pneumonia of {round(abs(prob) * 100, 2)}%.')
         st.text(f'Time taken for prediction is {round(time.process_time() - start, 2)} sec')
+        
+        # Additional Text
+        ## Dataset Details
+        st.markdown('## About the Dataset and Testing Strategy')
+        st.markdown('text')
+        ## Model Overview and Metrics
+        st.markdown('## Model Overview and Metrics')
+        st.markdown('text')
+    
     
 # Selectiong Breast Cancer Detection Web App
 if menu_selection == 'Breast Cancer Detection':
