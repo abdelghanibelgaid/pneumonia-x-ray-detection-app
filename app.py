@@ -4,6 +4,11 @@ from PIL import Image
 import time
 import about
 import functions
+
+st.set_page_config(
+        page_title="Rhazes.io",
+)
+
 menu_list = ['About', 'Pneumonia Detection','Breast Cancer Detection', 'Brain Tumor Detection']
     
 # Display the Sidebar
