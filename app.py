@@ -5,6 +5,7 @@ from PIL import Image
 import time
 import about
 import functions
+streamlit_analytics.track(unsafe_password="test123")
 
 st.set_page_config(page_title='Rhazes.io',
                    page_icon='https://raw.githubusercontent.com/abdelghanibelgaid/pneumonia-x-ray-detection-app/master/Rhazes.png',
