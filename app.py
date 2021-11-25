@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit_analytics
 import numpy as np
 from PIL import Image
 import time
@@ -19,7 +20,6 @@ menu_selection = st.sidebar.radio('Go to', menu_list, index=2, key=None)
 about.display_sidebar()
     
 # Selecting About Menu
-import streamlit_analytics
 with streamlit_analytics.track():
   if menu_selection == 'About':
     about.display_about()
