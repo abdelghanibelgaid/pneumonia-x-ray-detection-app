@@ -19,7 +19,9 @@ menu_selection = st.sidebar.radio('Go to', menu_list, index=2, key=None)
 about.display_sidebar()
     
 # Selecting About Menu
-if menu_selection == 'About':
+import streamlit_analytics
+with streamlit_analytics.track():
+  if menu_selection == 'About':
     about.display_about()
     
 # Selectiong Pneumonia Detection Web App
