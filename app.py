@@ -5,7 +5,6 @@ from PIL import Image
 import time
 import about
 import functions
-streamlit_analytics.track(unsafe_password="test123")
 
 st.set_page_config(page_title='Rhazes.io',
                    page_icon='https://raw.githubusercontent.com/abdelghanibelgaid/pneumonia-x-ray-detection-app/master/Rhazes.png',
@@ -36,7 +35,9 @@ if menu_selection == 'Pneumonia Detection':
                                          "moment has a test accuracy of "
                                          "<strong>+90%.</strong></p>")
     # Img uploader
+    streamlit_analytics.start_tracking()
     img = st.file_uploader(label="Load X-Ray Chest image", type=['jpeg', 'jpg', 'png'], key="xray")
+    streamlit_analytics.stop_tracking()
     if img is not None:
         # Preprocessing Image
         p_img = functions.preprocess_image(img)
