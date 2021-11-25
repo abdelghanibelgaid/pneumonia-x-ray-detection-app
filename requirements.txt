@@ -2,5 +2,5 @@ numpy
 tensorflow
 Keras
 streamlit
+streamlit_analytics
 Pillow
-tensorflow
