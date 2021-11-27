@@ -52,7 +52,7 @@ from fpdf import FPDF
 import base64
 
 st.markdown('### Report Generator')
-report_text = st.text_input("Enter the Name of the patient")
+name_text = st.text_input("Enter the Name of the patient")
 id_text = st.text_input("Enter the ID of the patient")
 pdf_name = str(id_text)+'_pneumonia_diagnosis'
 export_as_pdf = st.button("Export Report")
@@ -65,7 +65,8 @@ if export_as_pdf:
     pdf = FPDF()
     pdf.add_page()
     pdf.set_font('Arial', 'B', 16)
-    pdf.cell(40, 10, 'Pantient Name:'+report_text)
+    pdf.cell(40, 10, 'Pantient Name:'+name_text)
+    pdf.cell(40, 10, 'Pantient ID:'+id_text)
     
     html = create_download_link(pdf.output(dest="S").encode("latin-1"), pdf_name)
 
