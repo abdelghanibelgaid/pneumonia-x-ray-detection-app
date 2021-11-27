@@ -51,7 +51,9 @@ if img is not None:
 from fpdf import FPDF
 import base64
 
-report_text = st.text_input("Report Text")
+st.markdown('# Report Generator')
+report_text = st.text_input("Enter the Name of the patient")
+report_text = st.text_input("Enter the ID of the patient")
 
 
 export_as_pdf = st.button("Export Report")
