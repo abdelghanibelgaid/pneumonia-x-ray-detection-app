@@ -54,7 +54,7 @@ import base64
 st.markdown('### Report Generator')
 report_text = st.text_input("Enter the Name of the patient")
 report_text = st.text_input("Enter the ID of the patient")
-pdf_name = report_text+_pneumonia_diagnosis
+pdf_name = report_text+'_pneumonia_diagnosis'
 export_as_pdf = st.button("Export Report")
 
 def create_download_link(val, filename):
