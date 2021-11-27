@@ -4,5 +4,4 @@ Keras
 streamlit
 streamlit_analytics
 Pillow
-#fpdf
 base64
