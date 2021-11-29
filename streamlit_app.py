@@ -47,29 +47,3 @@ if img is not None:
     st.text(f'Time taken for prediction is {round(time.process_time() - start, 2)} sec')
   
 #####################
-"""
-from fpdf import FPDF
-import base64
-
-st.markdown('### Report Generator')
-name_text = st.text_input("Enter the Name of the patient")
-id_text = st.text_input("Enter the ID of the patient")
-pdf_name = str(id_text)+'_pneumonia_diagnosis'
-export_as_pdf = st.button("Export Report")
-
-def create_download_link(val, filename):
-    b64 = base64.b64encode(val)  # val looks like b'...'
-    return f'<a href="data:application/octet-stream;base64,{b64.decode()}" download="{filename}.pdf">Download Report</a>'
-
-if export_as_pdf:
-    pdf = FPDF()
-    pdf.add_page()
-    pdf.set_font('Arial', 'B', 16)
-    pdf.cell(40, 10, 'Pantient Name:'+name_text)
-    pdf.cell(40, 10, 'Pantient ID:'+id_text)
-    
-    html = create_download_link(pdf.output(dest="S").encode("latin-1"), pdf_name)
-
-    st.markdown(html, unsafe_allow_html=True)
-    
- """
