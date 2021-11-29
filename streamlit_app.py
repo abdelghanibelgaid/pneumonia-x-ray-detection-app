@@ -30,7 +30,7 @@ if img is not None:
     # Loading model
     loading_msg = st.empty()
     loading_msg.text("Predicting...")
-    model = functions.load_model()
+    model = functions.load_model(model=MODEL_1)
 
     # Predicting result
     start = time.process_time()
