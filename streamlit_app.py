@@ -4,6 +4,9 @@ import functions
 import time
 from PIL import Image
 
+# Models
+MODEL_1 = "pneumonia_detection_cnn.h5"
+
 # App Title
 st.title("Pneumonia X-Ray Detection App")
 
