@@ -47,7 +47,7 @@ if img is not None:
     st.text(f'Time taken for prediction is {round(time.process_time() - start, 2)} sec')
   
 #####################
-
+"""
 from fpdf import FPDF
 import base64
 
@@ -71,3 +71,5 @@ if export_as_pdf:
     html = create_download_link(pdf.output(dest="S").encode("latin-1"), pdf_name)
 
     st.markdown(html, unsafe_allow_html=True)
+    
+ """
