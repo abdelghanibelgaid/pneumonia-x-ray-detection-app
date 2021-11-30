@@ -8,18 +8,15 @@ from PIL import Image
 MODEL_1 = "pneumonia_detection_cnn.h5"
 
 # App Title
-st.title("Pneumonia X-Ray Detection App")
+st.title("Pneumonia X-Ray Detection")
 
 # Introduction text
 st.markdown(unsafe_allow_html=True, body="<p>Welcome to the Pneumonia X-Ray Detection App</p>"
-                                         "<p>Upload a Chest X-Ray image and predict whether the patient "
-                                         "suffers pneumonia or not.</p>"
-                                         "<p>The model used is a Convolutional Neural Network (CNN) and in this "
-                                         "moment has a test accuracy of "
-                                         "<strong>+90%.</strong></p>")
+                                         "<p>In this section, we’re presenting the Pneumonia X-Ray Detection Web Application.</p>"
+                                         "<p>Upload a Chest X-Ray image and predict whether the patient suffers from pneumonia or not.</p>")
 
 # Img uploader
-img = st.file_uploader(label="Load X-Ray Chest image", type=['jpeg', 'jpg', 'png'], key="xray")
+img = st.file_uploader(label="Load X-Ray Chest Image", type=['jpeg', 'jpg', 'png'], key="xray")
 
 if img is not None:
     # Preprocessing Image
